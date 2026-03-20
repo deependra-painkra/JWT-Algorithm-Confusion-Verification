@@ -1,0 +1,30 @@
+{
+  "finding_id": "FIND-0087",
+  "type": "BROKEN_AUTHENTICATION",
+  "subtype": "JWT_ALGORITHM_CONFUSION",
+  "target": "https://httpbin.org/get",
+  "endpoint": "/api/v1/admin/users",
+  "public_key_path": "./keys/server_public.pem",
+  "private_key_path": "./keys/server_private.pem",
+  "test_strategies": [
+    "alg_none",
+    "hs256_with_pubkey",
+    "alg_header_removal",
+    "kid_injection",
+    "expired_token",
+    "tamper_role_to_admin",
+    "blank_algorithm",
+    "rs256_mismatched_key",
+    "valid_rs256",
+    "case_sensitivity"
+  ],
+  "expected_rejection_code": 401,
+  "timeout_seconds": 3,
+  "sensitive_data_patterns": [
+    "users",
+    "admin",
+    "email",
+    "password",
+    "token"
+  ]
+}

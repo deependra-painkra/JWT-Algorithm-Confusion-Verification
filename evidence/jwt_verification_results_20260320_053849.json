@@ -1,0 +1,33 @@
+[
+  {
+    "test": "valid_rs256",
+    "status": 200,
+    "sensitive": false,
+    "result": "PASS",
+    "time": "2026-03-20T05:38:46.254336+00:00"
+  },
+  {
+    "test": "alg_none",
+    "status": 200,
+    "sensitive": false,
+    "result": "FAIL",
+    "time": "2026-03-20T05:38:48.056755+00:00"
+  },
+  {
+    "test": "hs256_pubkey",
+    "error": "The specified key is an asymmetric key or x509 certificate and should not be used as an HMAC secret.",
+    "result": "ERROR"
+  },
+  {
+    "test": "tamper_admin",
+    "error": "The specified key is an asymmetric key or x509 certificate and should not be used as an HMAC secret.",
+    "result": "ERROR"
+  },
+  {
+    "test": "expired",
+    "status": 200,
+    "sensitive": false,
+    "result": "FAIL",
+    "time": "2026-03-20T05:38:49.789163+00:00"
+  }
+]
