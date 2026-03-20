@@ -134,7 +134,7 @@ Even with "enforce RS256 only," the fix can fail if:
 
 ### Attack Flow Diagram
 
-![Attack Flow Daigram](https://github.com/deependra-painkra/JWT-Algorithm-Confusion-Verification/blob/05f0307c642c694e6a13679a92353707e3535501/images/jwt_algorithm_confusion_attack.svg)
+![Attack Flow Daigram](https://github.com/deependra-painkra/JWT-Algorithm-Confusion-Verification-v1/blob/03c4b68b910d0e638d6c65fe65e68c74193be090/images/jwt_algorithm_confusion_attack.svg)
 
 ---
 ### 4. Residual Risk Assessment
